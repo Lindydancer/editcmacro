@@ -1,6 +1,6 @@
-;;; editcmacro-test-basic.el --- Basic tests for editcmacro.el
+;;; editcmacro-test-basic.el --- Basic tests for editcmacro.el. -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2018  Anders Lindgren
+;; Copyright (C) 2018,2025  Anders Lindgren
 
 ;; Author: Anders Lindgren
 

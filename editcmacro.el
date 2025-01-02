@@ -1,9 +1,9 @@
-;;; editcmacro.el --- Edit C macro in a separate buffer
+;;; editcmacro.el --- Edit C macro in a separate buffer. -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2018  Anders Lindgren
+;; Copyright (C) 2018,2025  Anders Lindgren
 
 ;; Author: Anders Lindgren
-;; Version: 0.0.0
+;; Version: 0.0.1
 ;; Keywords: convenience, languages
 ;; Created: 2018-10-17
 ;; URL: https://github.com/Lindydancer/editcmacro
@@ -408,9 +408,7 @@ In the temporary edit buffer the following keys can be used:
 
 This mode is enabled in source buffers, but not the temporary
 edit buffer."
-  nil
-  nil
-  editcmacro-src-mode-map)
+  :keymap editcmacro-src-mode-map)
 
 
 ;; --------------------
@@ -428,9 +426,7 @@ edit buffer."
 
 This mode is enabled in the temporary buffer where the C macro is
 being edited."
-  nil
-  nil
-  editcmacro-edit-mode-map
+  :keymap editcmacro-edit-mode-map
   ;; Disable the source mode, to ensure it's binding doesn't take
   ;; precedence.
   (editcmacro-src-mode -1))
@@ -443,7 +439,7 @@ being edited."
 
 ;; Note: This is enabled in the major mode hook used both in the
 ;; source and temporary buffers.  To avoid a potential key binding
-;; collision, this mode enables tbe suppport modes
+;; collision, this mode enables the suppport modes
 ;; `editcmacro-src-mode' in the source mode and `editcmacro-edit-mode'
 ;; in the temporary buffer.  The support modes hold the keymap.
 ;;
@@ -456,9 +452,7 @@ being edited."
 
 The following keys are used:
 \\{editcmacro-src-mode-map}"
-  nil
-  nil
-  nil
+  :keymap nil
   (unless editcmacro-edit-mode
     (editcmacro-src-mode 1)))
 

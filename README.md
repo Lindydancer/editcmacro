@@ -1,7 +1,7 @@
 # editcmacro - Edit C macro in a separate buffer
 
 *Author:* Anders Lindgren<br>
-*Version:* 0.0.0<br>
+*Version:* 0.0.1<br>
 *URL:* [https://github.com/Lindydancer/editcmacro](https://github.com/Lindydancer/editcmacro)<br>
 
 This package lets you edit a C macro in a separate buffer, without

@@ -1,6 +1,6 @@
-;;; editcmacro-test-setup.el --- Setup and execute all tests.
+;;; editcmacro-test-setup.el --- Execute editcmacro tests. -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2018 Anders Lindgren
+;; Copyright (C) 2018,2025 Anders Lindgren
 
 ;; Author: Anders Lindgren
 
